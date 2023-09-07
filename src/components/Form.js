@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Form({ onAddItems }) {
   const [description, setDescription] = useState("");
-  const [quantity, setQuantity] = useState();
+  const [quantity, setQuantity] = useState(1);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -17,26 +17,37 @@ export default function Form({ onAddItems }) {
     setQuantity(1);
   }
 
+  function handleQuantityChange(newValue) {
+    setQuantity(newValue);
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === "Delete" || e.key === "Backspace") {
+      setQuantity(1);
+    }
+  }
+
   return (
     <form className="add-form" onSubmit={handleSubmit}>
       <h3>What do you need for your trip 😉?</h3>
-      <select
-        value={quantity}
-        onChange={(e) => setQuantity(Number(e.target.value))}
-      >
-        {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-          <option value={num} key={num}>
-            {num}
-          </option>
-        ))}
-      </select>
-      <input
-        type="text"
-        placeholder="Item..."
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
-      <button>Add</button>
+      <div className="horizontal-container">
+        <input
+          type="number"
+          value={quantity}
+          onChange={(e) => handleQuantityChange(parseInt(e.target.value))}
+          onKeyDown={handleKeyDown}
+          min="1"
+        />
+        <input
+          type="text"
+          placeholder="Item..."
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+        <button type="submit" className="add-button">
+          Add
+        </button>
+      </div>
     </form>
   );
 }
