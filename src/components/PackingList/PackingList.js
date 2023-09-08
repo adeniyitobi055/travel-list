@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Item from "./Item";
+import Item from "../Item/Item";
+import "./PackingList.css";
 
 export default function PackingList({
   items,
