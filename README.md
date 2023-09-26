@@ -65,7 +65,9 @@ npm run build
 **Note:** Ejecting is a one-way operation and should be done with caution. It gives you full control over the configuration files and dependencies, but it's irreversible.
 
 To eject from the default configuration and gain full control over the build tool and configuration choices, use the following command:
-`npm run eject`
+```
+npm run eject
+```
 
 | JAVASCRIPT FILES                                              | CSS FILES                                                       | TEST FILES                                             | DUTIES                                                                                                                  | COMPONENTS            |
 | ------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | --------------------- |
