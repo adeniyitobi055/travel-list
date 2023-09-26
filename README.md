@@ -20,7 +20,9 @@ Keeping track of travel items to ensure that nothing is forgotten while packing 
 To get started with this project follow these steps:
 
 1. Clone the repository to your local machine:
-   ```git clone https://github.com/adeniyitobi055/travel-list```
+   ```
+   git clone https://github.com/adeniyitobi055/travel-list
+   ```
 2. Navigate to the project directory:
    `cd travel-list`
 3. Install project dependencies using npm:
