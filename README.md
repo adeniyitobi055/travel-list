@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# TRAVEL LIST
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Keep track of your travel items
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Keeping track of travel items to ensure that nothing is forgotten while packing is essential. This project is designed to help users create checklists of items needed for their trips, ensuring that all items are packed, even in emergency situations. Additionally, the project provides notifications when all items have been packed for the trip.
 
-### `npm start`
+## Team Members
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Onajite Kobimowe
+- Kelvin Onumajuru
+- Antony Mbugua
+- Oluwatobi Adeniyi
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## PROJECT SETUP
 
-### `npm test`
+### INSTALLATION
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with this project follow these steps:
 
-### `npm run build`
+1. Clone the repository to your local machine:
+   `git clone https://github.com/adeniyitobi055/travel-list`
+2. Navigate to the project directory:
+   `cd travel-list`
+3. Install project dependencies using npm:
+   `npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## RUN THE PROJECT
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`npm start` to run the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## TESTING
 
-### `npm run eject`
+`npm test` to run test of the project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| REACT FILES                           | CSS FILES                               | DUTIES                                                               | COMPONENTS    |
+| ------------------------------------- | --------------------------------------- | -------------------------------------------------------------------- | ------------- |
+| [App.js](./src/components/App/App.js) | [App.css](./src/components/App/App.css) | The parent component of the application housing all other components | App component |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| [Form.js](./src/components/Form/Form.js)| [Form.css](./src/components/Form/Form.css)| This component is a sub component that
