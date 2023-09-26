@@ -24,13 +24,19 @@ To get started with this project follow these steps:
    git clone https://github.com/adeniyitobi055/travel-list
    ```
 2. Navigate to the project directory:
-   `cd travel-list`
+   ```
+   cd travel-list
+   ```
 3. Install project dependencies using npm:
-   `npm install`
+   ```
+   npm install
+   ```
 
 ## RUN THE PROJECT
 
-`npm start`
+```
+npm start
+```
 Runs the app in the development mode.
 
 **open http://localhost:300 to view it in your browser.**
@@ -38,13 +44,17 @@ The page will reload when you make changes, and any lint errors will be displaye
 
 ### TESTING
 
-`npm test`
+```
+npm test
+```
 Launches the test runner in the interactive watch mode. This is used for running automated tests to verify the functionality of the application. The tests are written using `Mocha`, `Sinon`, `jest` and `Chai`. You can find the test files in the **src/tests directory**.
 
 ### Building for Production
 
 To build the application for production, use the following command:
-`npm run build`
+```
+npm run build
+```
 
 - This command will create a production-ready build of the application in the build folder.
 - The build process optimizes the code for performance and minifies it to reduce file size.
@@ -52,7 +62,7 @@ To build the application for production, use the following command:
 
 ### Ejecting (Advanced Configuration)
 
-**Note:\*** Ejecting is a one-way operation and should be done with caution. It gives you full control over the configuration files and dependencies, but it's irreversible.
+**Note:** Ejecting is a one-way operation and should be done with caution. It gives you full control over the configuration files and dependencies, but it's irreversible.
 
 To eject from the default configuration and gain full control over the build tool and configuration choices, use the following command:
 `npm run eject`
