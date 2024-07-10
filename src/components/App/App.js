@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../Logo/Logo";
 import Form from "../Form/Form";
 import PackingList from "../PackingList/PackingList";
@@ -12,6 +12,24 @@ if (typeof window !== "undefined") {
 
 export default function App() {
   const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    // Load items from local storage on mount
+    const initialItems = [];
+    const storedItems = JSON.parse(localStorage.getItem("packingListItems"));
+    if (storedItems) {
+      setItems(storedItems);
+    } else {
+      setItems(initialItems);
+    }
+  }, []);
+
+  useEffect(() => {
+    // Save items to local storage whenever they change
+    if (items.length > 0) {
+      localStorage.setItem("packingListItems", JSON.stringify(items));
+    }
+  }, [items]);
 
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
@@ -36,6 +54,7 @@ export default function App() {
     );
 
     if (confirmed) setItems([]);
+    localStorage.removeItem("packingListItems");
   }
 
   return (

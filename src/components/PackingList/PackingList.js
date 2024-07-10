@@ -15,7 +15,6 @@ export default function PackingList({
   const [sortBy, setSortBy] = useState("input");
 
   let sortedItems;
-
   if (sortBy === "input") sortedItems = items;
 
   if (sortBy === "description")
